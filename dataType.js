@@ -31,5 +31,5 @@ console.log("My name is " + person.name + " and I am " + person.age + " years ol
 //symbol
 var symbol1 = Symbol("symbol");
 var symbol2 = Symbol("symbol");
-console.log(symbol1 === symbol1); // false
+console.log(symbol1 === symbol1); // true
 console.log(symbol1 === symbol2); // false
