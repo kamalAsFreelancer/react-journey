@@ -5,3 +5,4 @@ const student ={
 }
 
 console.log("my name is " + student.name + "and I am " + student.age + " years old. Am I a student? " + student.isStudent);
+

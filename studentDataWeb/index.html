@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Student Information</h2>
+        <form id="studentForm">
+            
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="studentName">Full Name</label>
+                <input type="text" id="studentName" placeholder="Enter full name" required>
+            </div>
+
+            <!-- Class Input -->
+            <div class="form-group">
+                <label for="classNum">Class / Grade</label>
+                <input type="number" id="classNum" placeholder="Enter class number" min="1" max="12" required>
+            </div>
+
+            <!-- Roll Number Input -->
+            <div class="form-group">
+                <label for="rollNum">Roll Number</label>
+                <input type="number" id="rollNum" placeholder="Enter roll number" min="1" required>
+            </div>
+
+            <!-- Section Input -->
+            <div class="form-group">
+                <label for="section">Section</label>
+                <input type="text" id="section" placeholder="Enter section (e.g., A, B, C)" maxlength="2" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn">Submit Data</button>
+        </form>
+    </div>
+    <div id="outputContainer">
+        <h3>Submitted Student Data:</h3>
+        </div>
+
+    <!-- Link your JS file here -->
+    <script src="script.js"></script>
+</body>
+</html>

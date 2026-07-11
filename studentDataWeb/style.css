@@ -1,0 +1,134 @@
+/* Reset basic padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column; /* Stacks the form and the output vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px; /* Puts a clean gap between the form and the output box */
+}
+
+/* Center Form Container */
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Layout for each input block */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Highlight input on focus */
+.form-group input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Style the Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+/* --- Styles for the Main Output Box --- */
+#outputContainer {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    border-top: 4px solid #4a90e2; /* Blue top border */
+}
+
+#outputContainer h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+/* --- Styles for each Student Record Card --- */
+#outputContainer p {
+    background: #f8fafc;        /* Soft gray background for each student card */
+    border: 1px solid #e2e8f0;   /* Light border around the data */
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;         /* Adds space between multiple students */
+    font-size: 15px;
+    line-height: 1.8;            /* Adds comfortable breathing room between lines */
+    color: #334155;
+    font-family: 'Courier New', Courier, monospace; /* Keeps spacing uniform so colons line up! */
+    
+    /* Subtle entry animation when a new student is added */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Make the strong text labels a distinct dark color */
+#outputContainer p strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* Simple fade-in animation effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
