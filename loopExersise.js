@@ -19,3 +19,16 @@ for (let k = 1; k<=100; k++){
 }
 
 console.log(sum);
+
+// calculate the sum of the num from 1-100 only of the even number 
+// ans : 2550
+
+let evesum = 0;
+
+for(let a=1; a<=100; a++){
+    if(a%2===0){
+        evesum+=a;
+    }
+}
+
+console.log(evesum);
