@@ -1,11 +1,30 @@
-for (let i=1; i<=5; i++){
-    console.log(i);
-}
+ // do while loop...
+// // the loops runs at least once, even the condition is false...
 
-// sum of the number using for loop...
-let sum = 0;
+// let j = 10;
 
-for (let i = 1; i<=5;i++){
-    sum+=i;
-}
-console.log(sum);
+// do{
+//     console.log(j);
+//     j++;
+// } while(j <= 5);
+
+// //for of loop
+// // this is the most useful loop for the arrays... 
+
+// const fruits = ["apple", "banana", "orange"];
+
+// for (const fruit of fruits){
+//     console.log(fruit);
+// }
+
+// // foor in loop
+// // this is usde for objects...
+// const student = {
+//     name: "kamal",
+//     address: "Dhulabari",
+//     age: 24,
+// };
+
+// for (const key in student) {
+//     console.log(key, student[key]);
+// }
